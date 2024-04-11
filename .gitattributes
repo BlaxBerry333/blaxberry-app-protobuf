@@ -1,0 +1,10 @@
+# Including Protocol Buffer
+*.proto linguist-vendored=false
+*.proto linguist-generated=false
+*.proto linguist-documentation=false
+*.proto linguist-detectable=true
+
+# Excluding TypeScript、Python、Go
+*.ts linguist-detectable=false
+*.py linguist-detectable=false
+*.go linguist-detectable=false

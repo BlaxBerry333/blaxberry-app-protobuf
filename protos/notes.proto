@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package notes;
+
+option go_package = "go/notes";
+
+
+// Note's data
+message NoteData {
+  int32 id = 1;
+  bool isDraft = 2;
+  string description = 3;
+}

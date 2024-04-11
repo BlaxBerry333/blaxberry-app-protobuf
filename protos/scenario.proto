@@ -1,0 +1,88 @@
+syntax = "proto3";
+
+package scenario;
+
+option go_package = "go/scenario";
+
+
+enum NodeTypes {
+  START = 0;
+  MESSAGE = 1;
+  FORM = 2;
+  CONDITION = 3;
+  VARIABLE = 4;
+  HTML = 5; 
+}
+
+
+// Message Node
+message MessageNode {
+  int32 id = 1;
+  NodeTypes nodeType = 2;
+  MessageNodeFormData formData = 3;
+}
+
+// Message Node's form data
+message MessageNodeFormData {
+  bool isInvalid = 1;
+  string title = 2; 
+  string text = 3; 
+}
+
+
+// Form Node
+message FormNode {
+  int32 id = 1;
+  NodeTypes nodeType = 2;
+  FormNodeFormData formData = 3;
+}
+
+// Form Node's form data
+message FormNodeFormData {
+  bool isInvalid = 1;
+  string title = 2; 
+}
+
+
+// Variable Node
+message VariableNode {
+  int32 id = 1;
+  NodeTypes nodeType = 2;
+  VariableNodeFormData formData = 3;
+}
+
+// Variable Node's form data
+message VariableNodeFormData {
+  bool isInvalid = 1;
+  string title = 2; 
+  string variableID = 3; 
+}
+
+
+// Condition Node
+message ConditionNode {
+  int32 id = 1;
+  NodeTypes nodeType = 2;
+  ConditionNodeFormData formData = 3;
+}
+
+// Condition Node's form data
+message ConditionNodeFormData {
+  bool isInvalid = 1;
+  string title = 2; 
+}
+
+
+// HTML Node
+message HTMLNode {
+  int32 id = 1;
+  NodeTypes nodeType = 2;
+  HTMLNodeFormData formData = 3;
+}
+
+// HTML Node's form data
+message HTMLNodeFormData {
+  bool isInvalid = 1;
+  string title = 2; 
+  string htmlString = 3; 
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package notes;
+
+option go_package = "go/chat";
+
+
+// ChatBot's data
+message ChatBotData {
+  int32 id = 1;
+  int32 scenarioID = 2;
+  bool isDraft = 3;
+  string description = 4;
+  repeated int32 variables = 5;
+}

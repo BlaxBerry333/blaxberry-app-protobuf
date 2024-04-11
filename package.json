@@ -1,0 +1,22 @@
+{
+  "name": "blaxberry-app-protobuf",
+  "version": "1.0.0",
+  "description": "BlaxBerry' Apps' Protocol Buffers & Type Code Generator",
+  "author": "BlaxBerry",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlaxBerry333/blaxberry-app-protobuf"
+  },
+  "files": [
+    "ts/"
+  ],
+  "dependencies": {
+    "ts-proto": "^1.169.1"
+  },
+  "devDependencies": {
+    "@types/google-protobuf": "^3.15.12",
+    "google-protobuf": "^3.21.2"
+  }
+}
