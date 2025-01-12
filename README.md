@@ -1,17 +1,8 @@
-# MyApp ProtoBuf
+# Venomous Apps' Protocol Buffers & Code Generator
 
-MyApps' Protocol Buffers & Type Code Generator
+[![My Skills](https://skillicons.dev/icons?i=go,ts,python&perline=4&theme=light)](https://skillicons.dev)
 
-## Commands
-
-```shell
-make                    # generate all
-
-make gen-go             # only generate go code based on proto
-make gen-ts-onlytypes   # only generate typescript code based on proto
-```
-
-## Setup
+## 🚀 Local Setup
 
 <details>
     <summary>
@@ -65,12 +56,32 @@ protoc-gen-go --version
     </summary>
 
 ```shell
-npm install
+% npm install ts-proto
 ```
 
 </details>
 
-## Usage
+<details>
+    <summary>
+        4. install all pkgs  
+    </summary>
+
+```shell
+% npm install
+```
+
+</details>
+
+## 🛠 Commands
+
+```shell
+% make gen-all      # generate all
+% make gen-go       # only generate Golang code
+% make gen-ts       # only generate Typescript code
+% make gen-py       # only generate Python code
+```
+
+## 🤔 How to use
 
 ### TypeScript
 
@@ -81,7 +92,8 @@ npm install
 
 ```shell
 cd <project>
-yarn add git+https://github.com/BlaxBerry/myapp_protobuf.git
+
+yarn add git+https://github.com/BlaxBerry333/venomous_app_protobuf.git
 yarn add -D google-protobuf @types/google-protobuf
 ```
 
@@ -93,9 +105,9 @@ yarn add -D google-protobuf @types/google-protobuf
     </summary>
 
 ```tsx
-import type { MessageNode, HTMLNode } from "myapp_protobuf/ts/scenario";
-import type { ChatBotData } from "myapp_protobuf/ts/chat";
-import type { NoteData } from "myapp_protobuf/ts/notes";
+import type { MessageNode, HTMLNode } from "venomous_app_protobuf/ts/workflow";
+import type { ChatBotData } from "venomous_app_protobuf/ts/chat";
+import type { NoteData } from "venomous_app_protobuf/ts/notes";
 ```
 
 </details>
@@ -108,7 +120,9 @@ import type { NoteData } from "myapp_protobuf/ts/notes";
     </summary>
 
 ```shell
-go get github.com/BlaxBerry/myapp_protobuf/go/scenario@main
+cd <project>
+
+go get github.com/BlaxBerry333/venomous_app_protobuf/go/scenario@main
 ```
 
 </details>
@@ -122,16 +136,16 @@ go get github.com/BlaxBerry/myapp_protobuf/go/scenario@main
 import (
     "fmt"
 
-    scenario "github.com/BlaxBerry/myapp_protobuf/go/scenario"
+    workflow "github.com/BlaxBerry333/venomous_app_protobuf/go/workflow"
 )
 
-var MockMessageNode = &scenario.MessageNode{
+var MockMessageNode = &workflow.MessageNode{
 	Id:    11,
 	Title: "xxx",
 	Text:  "yyy",
 }
 
-var MockHTMLNode = &scenario.HTMLNode{
+var MockHTMLNode = &workflow.HTMLNode{
 	Id:    22,
 	Title: "xxx",
 	Text:  "yyy",

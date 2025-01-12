@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package notes;
+
+option go_package = "go/notes";
+
+
+enum SelectableNoteType {
+  RAFT = 0;
+}
+
+
+message NoteDataType {
+  string _id = 1;
+  SelectableNoteType type = 2;
+  string title = 3;
+  string message = 4;
+  string created_at = 5;
+  string updated_at = 6;
+}

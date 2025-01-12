@@ -1,10 +1,13 @@
-# Including Protocol Buffer
+# 忽略的语言检测
+*.js linguist-detectable=false
+*.cjs linguist-detectable=false
+*.mjs linguist-detectable=false
+*.ts linguist-detectable=false
+*.py linguist-detectable=false
+*.go linguist-detectable=false
+
+# 需要的语言检测
 *.proto linguist-vendored=false
 *.proto linguist-generated=false
 *.proto linguist-documentation=false
 *.proto linguist-detectable=true
-
-# Excluding TypeScript、Python、Go
-*.ts linguist-detectable=false
-*.py linguist-detectable=false
-*.go linguist-detectable=false

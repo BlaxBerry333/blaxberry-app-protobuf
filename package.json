@@ -1,13 +1,13 @@
 {
-  "name": "blaxberry-app-protobuf",
-  "version": "1.0.0",
-  "description": "BlaxBerry' Apps' Protocol Buffers & Type Code Generator",
-  "author": "BlaxBerry",
-  "license": "UNLICENSED",
+  "name": "venomous_app_protobuf",
   "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "author": "blaxberry333",
+  "description": "blaxberry333's venomous apps' BFF",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlaxBerry333/blaxberry-app-protobuf"
+    "url": "git+https://github.com/BlaxBerry333/venomous_app_protobuf"
   },
   "files": [
     "ts/"
