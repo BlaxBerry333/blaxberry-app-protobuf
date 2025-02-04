@@ -9,7 +9,14 @@
 export const protobufPackage = "notes";
 
 export enum SelectableNoteType {
-  RAFT = 0,
+  ALL = 0,
+  RAFT = 1,
+  UNRECOGNIZED = -1,
+}
+
+export enum AccountRoleType {
+  NORMAL = 0,
+  ADMIN = 1,
   UNRECOGNIZED = -1,
 }
 
@@ -20,4 +27,17 @@ export interface NoteDataType {
   message: string;
   createdAt: string;
   updatedAt: string;
+  accountId: string;
+}
+
+export interface AccountDataType {
+  Id: string;
+  displayName: string;
+  password: string;
+  email: string;
+  avatar: string;
+  createdAt: string;
+  updatedAt: string;
+  role: AccountRoleType;
+  isActive: boolean;
 }

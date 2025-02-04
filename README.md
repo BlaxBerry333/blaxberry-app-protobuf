@@ -1,6 +1,8 @@
 # Venomous Apps' Protocol Buffers & Code Generator
 
-[![My Skills](https://skillicons.dev/icons?i=go,ts,python&perline=4&theme=light)](https://skillicons.dev)
+|          | Main Skills                                                                                                                                                                                                                                                                                                                   |          Topic          | Supported Languages |
+| :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------: | :-----------------: |
+| Protobuf | <img src="https://github.com/BlaxBerry333/programming-notes/blob/main/docs/public/static/skill-icons/web-backend--protobuf.png?raw=true" style="width:48px;" /> <img src="https://github.com/BlaxBerry333/programming-notes/blob/main/docs/public/static/skill-icons/dev-tools--makefile.png?raw=true" style="width:48px;" /> | Type Code Serialization | Golang、TypeScript  |
 
 ## 🚀 Local Setup
 

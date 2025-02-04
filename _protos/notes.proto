@@ -6,7 +6,8 @@ option go_package = "go/notes";
 
 
 enum SelectableNoteType {
-  RAFT = 0;
+  ALL = 0;
+  RAFT = 1;
 }
 
 
@@ -17,4 +18,24 @@ message NoteDataType {
   string message = 4;
   string created_at = 5;
   string updated_at = 6;
+  string account_id = 7;
+}
+
+
+enum AccountRoleType {
+  NORMAL = 0;
+  ADMIN = 1;
+}
+
+
+message AccountDataType {
+  string _id = 1;
+  string display_name = 2;
+  string password = 3;
+  string email = 4;
+  string avatar = 5;
+  string created_at = 6; 
+  string updated_at = 7;
+  AccountRoleType role = 8;
+  bool is_active = 9;
 }
